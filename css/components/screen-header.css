@@ -2,7 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px;
+    padding: var(--horizontal-space);
+}
+.screen-header_chat {
+    margin-bottom: 15px;
 }
 
 .screen-header_title {

@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Friends - Kokoa Clone</title>
+    <title>Chats - Kokoa Clone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -23,12 +23,15 @@
         </div>
     </div>
 
-    <header class="screen-header">
-        <h1 class="screen-header_title">Friends</h1>
+    <header class="screen-header screen-header_chat">
+        <h1 class="screen-header_title">Chats</h1>
         <div>
             <span class="screen-header_icons">
                 <i class="fa-solid fa-magnifying-glass fa-lg"></i>
             </span>
+            <sapn class="screen-header_icons">
+                <i class="fa-solid fa-comment-dots fa-lg"></i>
+            </sapn>
             <span class="screen-header_icons">
                 <i class="fa-solid fa-music fa-lg"></i>
             </span>
@@ -37,47 +40,30 @@
             </span>
         </div>
     </header>
-    
-    <a id="friends-display-link">
-        <i class="fa-solid fa-circle-info"></i>
-        Friends' Names Display 
-        <i class="fa-solid fa-chevron-right"></i>
-    </a>
 
-    <main class="friends-screen">
+    <main class="main-screen">
         <div class="user-component">
             <div class="user-component__column">
-                <img src="screenshots/myProfileimg.jpeg" class="user-component_avatar user-component_avatar--xl" />
+                <img src="screenshots/myProfileimg.jpeg" class="user-component_avatar user-component_avatarl" />
                 <div class="user-component_text">
                     <h4 class="user-componenet_title">KimHyunTae</h4>
-                    <!-- <h6 class="user-component_subtitle">Happy Monday!</h6> -->
+                    <h6 class="user-component_subtitle">Please check My Kakao Account Info</h6>
                 </div>
             </div>
-        </div>
-        <div class="friends-screen_channel">
-            <div class="friends-screen_channel-header">
-                <span>Channel</span>  
-                <span>^</span>
+            <div class="flex_column">
+                <span class="user-component_time">21:22</span>
+                <div class="badge">1</div>
             </div>
-        </div>
-        <div class="user-component">
-            <div class="user-component__column">
-                <img src="screenshots/myProfileimg.jpeg" class="user-component_avatar user-component_avatar--sm" />
-                <div class="user-component_text">
-                    <h4 class="user-componenet_title user-component_title--not-bold">Channel</h4>
-                </div>
-            </div>
-            <span class="user-component_up">2></span>
         </div>
     </main>
 
     <nav class="nav">
         <ul class="nav_list">
-            <li class="nav_btn"><a class="nav_link" href="friends.html"><i class="fa-solid fa-user fa-2x"></i></a></li>
+            <li class="nav_btn"><a class="nav_link" href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a></li>
             <li class="nav_btn">
                 <a class="nav_link" href="chats.html">
                     <span class="nav_notification badge">1</span>
-                    <i class="fa-regular fa-comment fa-2x"></i>
+                    <i class="fa-solid fa-comment fa-2x"></i>
                 </a>
             </li>
             <li class="nav_btn">
