@@ -1,0 +1,126 @@
+#chat-screen {
+    background-color: #abc1d1;
+    height: 1100vh;
+}
+
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #abc1d1;
+    box-sizing: border-box;
+}
+
+#chat-screen .status-bar {
+    z-index: 1;         /* postion: fixed, absolute  */
+}
+
+#chat-screen .alt-header {
+    top: 10px
+}
+
+.main-chat {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chat-timestamp {
+    color: white;
+    background-color: #92a4b2;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.message-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.message-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.message_author {
+    opacity: 0.6;
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.message_info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.message_bubble {
+    background-color: white;
+    padding: 11px;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+}
+
+.message_time {
+    opacity: 0.6;
+    font-size: 13px;
+}
+
+.message-row--own {
+    flex-direction: row-reverse;
+}
+
+.message-row--own .message_bubble {
+    background-color: var(--yellow);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    order: 1;                       /* flex children에만 적용됨*/
+}
+
+.message-row--own .message_time {
+    order: 0;
+}
+
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.reply .reply_column:first-child {
+    width: 10%; 
+}
+
+.reply .reply_column:last-child {
+    position: relative;
+    width: 90%;
+}
+
+.reply input {
+    height: 30px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+}
+.reply_column :last-child i,
+.reply_column :last-child button {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}

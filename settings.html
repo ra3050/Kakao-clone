@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Chats - Kokoa Clone</title>
+    <title>Setttings - Kokoa Clone</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
@@ -23,49 +23,57 @@
         </div>
     </div>
 
-    <header class="screen-header screen-header_chat">
-        <h1 class="screen-header_title">Chats</h1>
-        <div>
-            <span class="screen-header_icons">
-                <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-            </span>
-            <sapn class="screen-header_icons">
-                <i class="fa-solid fa-comment-dots fa-lg"></i>
-            </sapn>
-            <span class="screen-header_icons">
-                <i class="fa-solid fa-music fa-lg"></i>
-            </span>
-            <span class="screen-header_icons">
-                <i class="fa-solid fa-gear fa-lg"></i>
-            </span>
+    <header class="alt-header">
+        <div class="alt-header_column">
+            <a href="more.html">
+                <i class="fa-solid fa-angle-left fa-2x"></i>
+            </a>
+        </div>
+        <div class="alt-header_column">
+            <h1 class="alt-header_title">Settings</h1> 
+        </div>
+        <div class="alt-header_column">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
         </div>
     </header>
 
     <main class="main-screen">
-        <a href="chat.html">
-            <div class="user-component">
-                <div class="user-component__column">
-                    <img src="screenshots/myProfileimg.jpeg" class="user-component_avatar user-component_avatarl" />
-                    <div class="user-component_text">
-                        <h4 class="user-componenet_title">KimHyunTae</h4>
-                        <h6 class="user-component_subtitle">Please check My Kakao Account Info</h6>
-                    </div>
-                </div>
-                <div class="flex_column">
-                    <span class="user-component_time">21:22</span>
-                    <div class="badge">1</div>
-                </div>
+       <ul class="settings-list">
+        <li class="settings-setting">
+            <div class="settings_setting-column">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span>Notices</span>
             </div>
-        </a>
+            <div class="settings_setting-column"></div>
+        </li>
+        <li class="settings-setting">
+            <div class="settings_setting-column">
+                <i class="fa-solid fa-flask"></i>
+                <span>Kokoda Lab</span>
+            </div>
+            <div class="settings_setting-column"></div>
+        </li>
+        <li class="settings-setting">
+            <div class="settings_setting-column">
+                <i class="fa-solid fa-circle-info"></i>
+                <span>Version</span>
+            </div>
+            <div class="settings_setting-column"> Lastest Version</div>
+        </li>
+       </ul>
     </main>
 
     <nav class="nav">
         <ul class="nav_list">
-            <li class="nav_btn"><a class="nav_link" href="friends.html"><i class="fa-regular fa-user fa-2x"></i></a></li>
+            <li class="nav_btn">
+                <a class="nav_link" href="friends.html">
+                    <i class="fa-regular fa-user fa-2x"></i>
+                </a>
+            </li>
             <li class="nav_btn">
                 <a class="nav_link" href="chats.html">
                     <span class="nav_notification badge">1</span>
-                    <i class="fa-solid fa-comment fa-2x"></i>
+                    <i class="fa-regular fa-comment fa-2x"></i>
                 </a>
             </li>
             <li class="nav_btn">
